@@ -21,8 +21,8 @@ data = data["props"]["apolloState"]
 ref = []
 
 for i in data:
-        if i == "HomefeedPageFEATURED-0-31":
-            for j in range(len(data[i]["items"])):
+        if "HomefeedPageFEATURED" in i:
+                for j in range(len(data[i]["items"])):
                 ref.append(data[i]["items"][j]["__ref"])
 
 info = []
